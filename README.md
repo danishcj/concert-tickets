@@ -4,7 +4,7 @@
 
 Concert Tickets is an API application developed in PHP using [Laravel framework](). After the build you will be able to view, create, edit, delete bookings of music events in South Wales.
 
-Each endpoint is secured with a token using Larvel Passport giving access only to the relevant user except the view events.
+Each endpoint is secured with a token using Larvel Passport giving access only to the relevant user except registration, login & view all events services.
 
 
 ## Build steps
@@ -29,13 +29,13 @@ Each endpoint is secured with a token using Larvel Passport giving access only t
 First of all create a user using the "Register" endpoint.
 A postman collection is included to test the endpoints:
 
-    POST 'login'
-    POST 'register'
+    POST '/api/login'
+    POST '/api/register'
     GET '/api/events'
-    GET 'all_bookings'
-    POST 'new_booking'
-    PUT 'booking/{id}'
-    DELETE 'booking/delete/{id}'
+    GET '/api/all_bookings'
+    POST '/api/new_booking'
+    PUT '/api/booking/{id}'
+    DELETE '/api/booking/delete/{id}'
 #### Payloads:
 > example endpoint -> ['field_name|datatype']
 
