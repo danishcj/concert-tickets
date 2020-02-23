@@ -13,6 +13,8 @@ Each endpoint is secured with a token using Larvel Passport giving access only t
 2.  Open .env and insert your MySQL connection details (DB_HOST,DB_PORT,DB_USERNAME)
 3.  Run the following commands on terminal:
 
+> composer install
+
 > php artisan db:create
 
 > php artisan migrate
