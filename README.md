@@ -12,10 +12,15 @@ Each endpoint is secured with a token using Larvel Passport giving access only t
 1.  Download the repository and access the project's directory on terminal.
 2.  Open .env and insert your MySQL connection details (DB_HOST,DB_PORT,DB_USERNAME)
 3.  Run the following commands on terminal:
+
 > php artisan db:create
+
 > php artisan migrate
+
 > php artisan db:seed
+
 > php artisan passport:install
+
 > php artisan serve
 
 
@@ -33,10 +38,15 @@ A postman collection is included to test the endpoints:
     DELETE 'booking/delete/{id}'
 ###### Payloads:
 > example endpoint -> ['field_name|datatype']
+
 > login -> ['email|string', 'password|string']
+
 > register -> ['name|string', 'email"string', 'password|string']
+
 > new_booking ->['events_id|integer', 'delivery_address|string', 'ticket_quantity|integer']
+
 > booking/{id} -> ['delivery_address|string']
+
 
 ###### Authetication:
 A token is returned on Registration & Login services' responses.
