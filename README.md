@@ -36,7 +36,7 @@ A postman collection is included to test the endpoints:
     POST 'new_booking'
     PUT 'booking/{id}'
     DELETE 'booking/delete/{id}'
-###### Payloads:
+#### Payloads:
 > example endpoint -> ['field_name|datatype']
 
 > login -> ['email|string', 'password|string']
@@ -48,7 +48,7 @@ A postman collection is included to test the endpoints:
 > booking/{id} -> ['delivery_address|string']
 
 
-###### Authetication:
+#### Authetication:
 A token is returned on Registration & Login services' responses.
 Add the 'Authorisation' field in headers and in the value field preceed the token value with Bearer OR if using Postman select 'Bearer Token' in Authorisation option
 
